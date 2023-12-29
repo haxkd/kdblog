@@ -10,16 +10,13 @@ function App() {
   return (
     <>
       <Navbar />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="AddPost" element={<AddPost />} />
         <Route path="blog/:slug" element={<Blog />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-
       <Footer />
-
     </>
   );
 }
